@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarGuru - Your Smart Car Buying Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="CarGuru Logo">
+                <h1>CarGuru</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><button id="launchChatbot">Try CarGuru</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Find Your Perfect Car with AI</h2>
+                <p>CarGuru helps you discover the ideal vehicle based on your budget, needs, and preferences.</p>
+                <button id="heroChatBtn">Start Chat Now <i class="fas fa-comment-dots"></i></button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-image.jpg" alt="Happy car buyer">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Use CarGuru?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Powered</h3>
+                    <p>Our smart chatbot learns your preferences to give personalized recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Budget Matching</h3>
+                    <p>Find cars that fit your financial situation without compromising on quality.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Instant Results</h3>
+                    <p>Get recommendations in seconds, not hours of research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="chatbotContainer" class="chatbot-container">
+        <iframe src="chatbot.html" frameborder="0"></iframe>
+        <button id="closeChatbot"><i class="fas fa-times"></i></button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 CarGuru | AI Car Recommendation System</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
